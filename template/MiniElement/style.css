@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.faq-container {
+  max-width: 1000px;
+  width: 100%;
+  background: white;
+  padding: 60px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.faq-title {
+  font-size: 42px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.title-black {
+  color: #000;
+}
+
+.title-blue {
+  color: #2563eb;
+  margin-left: 10px;
+}
+
+.faq-subtitle {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 50px;
+  max-width: 100%;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  background: #f8f9fa;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  padding: 28px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+}
+
+.faq-question span {
+  flex: 1;
+}
+
+/* Кнопка-переключатель (синий круг) */
+.faq-toggle {
+  width: 48px;
+  height: 48px;
+  border: none;
+  background: #2563eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: none;
+  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
+  color: white;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1;
+  position: relative;
+}
+
+.faq-toggle.minus-style {
+  font-size: 40px;
+  align-items: center;
+}
+
+.arrow-down {
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  transform: rotate(180deg);
+  margin-left: 0px; /* Чуть влево */
+  margin-top: 0;
+}
+
+.arrow-down::before,
+.arrow-down::after {
+  content: '';
+  position: absolute;
+  background: white;
+  width: 2px;
+  height: 12px;
+  border-radius: 1px;
+  top: 2px;
+  left: 23px;
+}
+
+.arrow-down::before {
+  transform: rotate(45deg);
+  transform-origin: top center;
+}
+
+.arrow-down::after {
+  transform: rotate(-45deg);
+  transform-origin: top center;
+}
+
+.faq-answer {
+  padding: 0 32px 32px 32px;
+  color: #444;
+  line-height: 1.7;
+  font-size: 18px;
+  display: none;
+}
+
+.faq-answer p {
+  margin-bottom: 20px;
+}
+
+.faq-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.faq-button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 16px 42px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 6px 12px rgba(37, 99, 235, 0.25);
+}
+
+.faq-button:hover {
+  background: #1d4ed8;
+}

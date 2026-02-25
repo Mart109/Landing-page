@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>О нас</title>
+    <link rel="stylesheet" href="SlideSeven.css" />
+    <link rel="stylesheet" href="../../adaptive.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="about">
+        <h1>О нас</h1>
+
+        <div class="about-text" id="mainText">
+          Текст текст текст текст текст текст текст текст текст текст текст
+          текст текст текст текст текст текст текст текст текст текст текст
+          текст текст текст текст текст текст текст текст текст текст текст
+          текст текст текст текст текст текст текст текст текст текст текст.
+
+          <span class="hidden-part">
+            Текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст текст текст
+            Текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст текст текст
+            Текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст текст текст
+            Текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст текст текст
+            Текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст текст текст
+            Текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст текст текст
+            Текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст текст текст
+            Текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст текст текст
+            Текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст текст текст.
+          </span>
+        </div>
+
+        <div class="expand" onclick="toggleText()">
+          <span class="expand-text">Развернуть</span>
+          <span class="arrow">↓</span>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-grid">
+          <div class="column">
+            <h3>Нужна помощь?</h3>
+
+            <div class="contact-block">
+              <div class="blue-line"></div>
+              <div>
+                <div class="small">Пресс служба</div>
+                <div class="phone">8 800 555 55 55</div>
+              </div>
+            </div>
+
+            <div class="contact-block">
+              <div class="blue-line"></div>
+              <div>
+                <div class="small">Почта для связи</div>
+                <div class="email">info@eastnews.com</div>
+              </div>
+            </div>
+
+            <div class="contact-block">
+              <div class="blue-line"></div>
+              <div>
+                <div class="small">Расскажите о нас</div>
+                <div class="socials">
+                  <img src="vk.png" alt="VK" />
+                  <img src="ok.png" alt="OK" />
+                  <img src="tg.png" alt="Telegram" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <h3>Разделы</h3>
+            <a href="#">Категории</a>
+            <a href="#">Вопросы-ответы</a>
+            <a href="#">Полезные советы</a>
+            <a href="#">Рекомендации</a>
+          </div>
+
+          <div class="column">
+            <h3>Ещё</h3>
+            <a href="#">Мега-скидки</a>
+            <a href="#">Что ищут?</a>
+            <a href="#">Агрегаторы</a>
+            <a href="#">Статьи</a>
+          </div>
+
+          <div class="column">
+            <h3>Кабинет</h3>
+            <a href="#">Войти</a>
+            <a href="#">Зарегистрироваться</a>
+            <a href="#">Избранное</a>
+
+            <div class="stores">
+              <img src="appstore.png" alt="App Store" />
+              <img src="googleplay.png" alt="Google Play" />
+              <img src="rustore.png" alt="RuStore" />
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="copyright">Copyright © 2024–2026 by Magic Works</div>
+      </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+      function toggleText() {
+        const textBlock = $('#mainText')
+        const expandSpan = $('.expand-text')
+        const arrow = $('.arrow')
+
+        textBlock.toggleClass('expanded')
+
+        if (textBlock.hasClass('expanded')) {
+          expandSpan.text('Свернуть')
+          arrow.addClass('rotated')
+        } else {
+          expandSpan.text('Развернуть')
+          arrow.removeClass('rotated')
+        }
+      }
+    </script>
+  </body>
+</html>

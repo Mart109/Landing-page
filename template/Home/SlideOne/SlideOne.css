@@ -11,12 +11,14 @@ body {
 }
 
 .container {
-  width: 1200px;
-  max-width: 90%;
+  width: 1300px;
+  max-width: 95%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 40px;
+  position: relative;
 }
 
 .hero {
@@ -24,7 +26,8 @@ body {
 }
 
 .hero-content {
-  max-width: 600px;
+  max-width: 550px;
+  flex-shrink: 0;
 }
 
 .hero h1 {
@@ -59,6 +62,7 @@ body {
   text-decoration: none;
   font-weight: 600;
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 .btn-primary:hover {
@@ -69,14 +73,30 @@ body {
   text-decoration: none;
   color: #1f2937;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .btn-link:hover {
   text-decoration: underline;
 }
 
+.hero-image {
+  margin-left: 10px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .hero-side {
-  max-width: 300px;
+  max-width: 280px;
+  flex-shrink: 0;
+  margin-top: 280px;
+  align-self: center;
 }
 
 .hero-side h3 {
@@ -87,7 +107,7 @@ body {
 .hero-side p {
   font-size: 14px;
   color: #6b7280;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   line-height: 1.5;
 }
 
@@ -95,104 +115,10 @@ body {
   font-size: 14px;
   color: #2a9df4;
   text-decoration: none;
+  display: inline-block;
+  margin-top: 5px;
 }
 
 .more-link:hover {
   text-decoration: underline;
-}
-
-@media (max-width: 1200px) {
-  .container {
-    width: 100%;
-    padding: 0 30px;
-  }
-}
-
-@media (max-width: 992px) {
-  .hero {
-    padding: 80px 0;
-  }
-
-  .hero h1 {
-    font-size: 38px;
-  }
-
-  .hero-content {
-    max-width: 500px;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
-    gap: 50px;
-  }
-
-  .hero {
-    padding: 60px 0;
-  }
-
-  .hero-content {
-    max-width: 100%;
-  }
-
-  .hero h1 {
-    font-size: 34px;
-  }
-
-  .buttons {
-    justify-content: center;
-  }
-
-  .hero-side {
-    max-width: 100%;
-    text-align: center;
-  }
-}
-
-@media (max-width: 576px) {
-  .hero {
-    padding: 40px 0;
-  }
-
-  .hero h1 {
-    font-size: 28px;
-  }
-
-  .description {
-    font-size: 15px;
-  }
-
-  .buttons {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .btn-primary {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 0 20px;
-  }
-
-  .hero h1 {
-    font-size: 24px;
-  }
-
-  .description {
-    font-size: 14px;
-  }
-
-  .hero-side h3 {
-    font-size: 16px;
-  }
-
-  .hero-side p {
-    font-size: 13px;
-  }
 }
