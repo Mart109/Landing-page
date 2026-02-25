@@ -27,13 +27,20 @@ body {
   max-width: 550px;
 }
 
-h1 {
-  font-size: 36px;
-  line-height: 1.3;
-  margin-bottom: 20px;
+.title {
+  width: 200%;
+  margin-bottom: 30px;
 }
 
-h1 span {
+h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 111%;
+  letter-spacing: 0.002em;
+}
+
+h3 span {
   color: #1d9bf0;
 }
 
@@ -72,8 +79,19 @@ h1 span {
   color: #666;
 }
 
+.parent {
+  text-align: center;
+}
+
+.help_text {
+  position: absolute;
+  margin-top: -2.5%;
+  margin-left: 20%;
+}
+
 .btn {
   display: inline-block;
+  margin-top: 31%;
   padding: 12px 24px;
   background: #e6f2ff;
   color: #1d9bf0;
