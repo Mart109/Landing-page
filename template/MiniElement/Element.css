@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.mini-divider {
+  background: #2563eb;
+  color: white;
+  padding: 60px 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 100%;
+}
+
+.divider-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.divider-left {
+  flex: 2;
+}
+
+.divider-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.divider-text {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  opacity: 0.95;
+  font-weight: 300;
+}
+
+.divider-contact {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 200;
+}
+
+.divider-contact a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.divider-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cloud-image {
+  width: 110%;
+  height: auto;
+  display: block;
+  margin-top: -30px;
+}
+
+.divider-bottom {
+  text-align: center;
+  padding-top: 16px;
+}
+
+.divider-bottom p {
+  font-size: 24px;
+  font-weight: 600;
+}
